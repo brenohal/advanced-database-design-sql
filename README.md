@@ -1,5 +1,3 @@
-> **NOTE:** This README.md file should be placed at the **root of each of your main directory.**
-
 # LIS3781 Advances Data Management
 
 ## Brennan O'Halloran
@@ -9,12 +7,11 @@
 *Course Work Links:*
 
 1. [A1 README.md](a1/README.md "My A1 README.md file")
-    - Screenshot of ampps installation running (#1 above);
+    - Screenshot of ampps installation running;
     - Screenshot of A1 ERD
-    - Screenshot of at least one SQL Solution (e.g., Ex1.)
+    - Screenshot of at least one SQL Solution
     - Forward-engineered and linked .sql file lis3781_a1_solutions.sql
     - Git commands w/short descriptions
-    - Link to my lis3781_a1_solutions.sql file—including tables AND data!
 
 2. [A2 README.md](a2/README.md "My A2 README.md file")
     - Install something
@@ -32,7 +29,7 @@
     - Install something
     - Install something
     
-6.    [P1 README.md](p1/README.md "My P1 README.md file")
+6.  [P1 README.md](p1/README.md "My P1 README.md file")
     - Install something
     - Install something
     
