@@ -10,7 +10,7 @@ Five Parts:
 1. Distributive version control with Git and BitBucket.
 2. Install Ampps software.
 3. Answer required questions
-4. ERD and SQL code (a1/lis3781_a1_solutions.sql)
+4. ERD and SQL code 
 5. Bitbucket repo links
 
 # A1 Database Business Rules
@@ -40,8 +40,9 @@ The human resource (HR) department of the ACME company wants to contract a datab
 
 * Screenshot of A1 ERD
 * At least 1 SQL Solution
-* Forward Engineered SQL file (a1/lis3781_a1_solutions.sql)
+* Forward Engineered SQL file ![a1SQL](lis3781_a1_solutions.sql)
 * Git commands and short descriptions
+
 
 > #### Git commands w/short descriptions:
 
