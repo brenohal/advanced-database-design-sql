@@ -16,35 +16,35 @@ Five Parts:
 
 # A2 Database Requirements:
 Use 1:M relationship: company is parent table
-b. company attributes:
-    i. cmp_id (pk)
-    ii. cmp_type enum('C-Corp','S-Corp','Non-Profit-Corp','LLC','Partnership')
-    iii. cmp_street
-    iv. cmp_city
-    v. cmp_state
-    vi. cmp_zip
-    vii. cmp_phone
-    viii. cmp_ytd_sales
-    ix. cmp_url
-    x. cmp_notes
-c. customer attributes:
-    i. cus_id (pk)
-    ii. cmp_id (fk)
-    iii. cus_ssn (binary 64)
-    iv. cus_salt (binary 64)
-    v. cus_type enum('Loyal','Discount','Impulse','Need-Based','Wandering')
-    vi. cus_first
-    vii. cus_last
-    viii. cus_street
-    ix. cus_city
-    x. cus_state
-    xi. cus_zip
-    xii. cus_phone
-    xiii. cus_email
-    xiv. cus_balance
-    xv. cus_tot_sales
-    xvi. cus_notes
-d. Create suitable indexes and foreign keys:
+1. company attributes:
+    - cmp_id (pk)
+    - cmp_type enum('C-Corp','S-Corp','Non-Profit-Corp','LLC','Partnership')
+    - cmp_street
+    - cmp_city
+    - cmp_state
+    - cmp_zip
+    - cmp_phone
+    - cmp_ytd_sales
+    - cmp_url
+    - cmp_notes
+2. customer attributes:
+    - cus_id (pk)
+    - cmp_id (fk)
+    - cus_ssn (binary 64)
+    - cus_salt (binary 64)
+    - cus_type enum('Loyal','Discount','Impulse','Need-Based','Wandering')
+    - cus_first
+    - cus_last
+    - cus_street
+    - cus_city
+    - cus_state
+    - cus_zip
+    - cus_phone
+    - cus_email
+    - cus_balance
+    - cus_tot_sales
+    - cus_notes
+3. Create suitable indexes and foreign keys:
 Enforce pk/fk relationship: on update cascade, on delete restrict
 
 
@@ -60,23 +60,23 @@ See Granting_Privileges.pdf
 
 Log into local server as required:
 3. Verify database/table permissions, show grants:
-    a. yours/admin
-    b. user1 (logged in as user1)
-    c. user2 (logged in as admin)
+    - yours/admin
+    - user1 (logged in as user1)
+    - user2 (logged in as admin)
 4. Display current user2 (logged in as user2) and MySQL version
 5. List tables (as admin)
 6. Display structures for both tables (as admin)
-    a. company
-    b. customer
+    - company
+    - customer
 7. Display data for both tables:
-    a. company (as user2)
-    b. customer (as user1)
+    - company (as user2)
+    - customer (as user1)
 8. Log in as user1:
-    a. show the SQL INSERT statement, and corresponding query result set that prevented user1 from inserting data in the company table
-    b. show the SQL INSERT statement, and corresponding query result set that prevented user1 from inserting data in the customer table
+    - show the SQL INSERT statement, and corresponding query result set that prevented user1 from inserting data in the company table
+    - show the SQL INSERT statement, and corresponding query result set that prevented user1 from inserting data in the customer table
 9. Log in as user2:
-    a. show the SQL statement, and corresponding query result set that prevented user2 from “seeing” company table:
-    b. same as above, though, prevented from being able to delete from the customer table:
+    - show the SQL statement, and corresponding query result set that prevented user2 from “seeing” company table:
+    - same as above, though, prevented from being able to delete from the customer table:
 10. Log in as admin: remove both tables (structure and data), and show commands:
 
 
