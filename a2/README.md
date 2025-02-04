@@ -82,36 +82,30 @@ Log into local server as required:
 
 #### README.md file should include the following items:
 
-* Screenshot of A1 ERD
-* At least 1 SQL Solution
-* Forward Engineered SQL file [lis3781_a1_solutions.sql](lis3781_a1_solutions.sql)
-
-* Git commands and short descriptions
+1. Screenshot of *your* SQL code;
+2. Screenshot of *your* populated tables;
+3. Link to your lis3781_a2_solutions.sql file—including tables AND data
 
 
-> #### Git commands w/short descriptions:
-
-1. git init - Create an empty Git repository or reinitialize an existing one
-2. git status - Show the working tree status
-3. git add - Add file contents to the index
-4. git commit - Record changes to the repository
-5. git push - Update remote refs along with associated objects
-6. git pull - Fetch from and integrate with another repository or a local branch
-7. git clone - Clone a repository into a new directory
 
 #### Assignment Screenshots:
 
-*Screenshot of AMPPS running http://localhost*:
+*Screenshots of SQL code*:
 
-![AMPPS Installation Screenshot](img/ampps.png)
+![A2 SQL Code Part 1](img/sql1.png)
+![A2 SQL Code Part 2](img/sql2.png)
+![A2 SQL Code Part 3](img/sql3.png)
 
-*Screenshot of a1 ERD*:
+*Screenshot of populated customer table*:
 
-![a1 ERD Screenshot](img/ERD.png)
+![A2 Customer Table](img/customer.png)
 
-*Screenshot of Question 2 Solution*:
+*Screenshot of populated company table*:
 
-![Question 2 Screenshot](img/q2.png)
+![A2 Company Table](img/company.png)
+
+*Link to lis3781_a2_solutions.sql file:*
+[lis3781_a2_solutions.sql](lis3781_a2_solutions.sql)
 
 
 
