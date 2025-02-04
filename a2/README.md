@@ -77,7 +77,7 @@ Log into local server as required:
 9. Log in as user2:
     - show the SQL statement, and corresponding query result set that prevented user2 from “seeing” company table:
     - same as above, though, prevented from being able to delete from the customer table:
-10. Log in as admin: remove both tables (structure and data), and show commands:
+10. Log in as admin: remove both tables (structure and data), and show commands.
 
 
 #### README.md file should include the following items:
