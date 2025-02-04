@@ -2,10 +2,10 @@
 
 ## Brennan O'Halloran
 
-# Assignement #2 Requirements:
+# Assignment #2 Requirements:
 
 
-Five Parts:
+Six Parts:
 
 1. Create the company and customer tables using SQL statements.
 2. Run describe commands.
@@ -45,7 +45,7 @@ Use 1:M relationship: company is parent table
     - cus_tot_sales
     - cus_notes
 3. Create suitable indexes and foreign keys:
-Enforce pk/fk relationship: on update cascade, on delete restrict
+    - Enforce pk/fk relationship: on update cascade, on delete restrict
 
 
 # User1 and User2 required SQL commands:
@@ -117,8 +117,3 @@ Log into local server as required:
 
 
 
-
-#### Tutorial Links:
-
-*Bitbucket Tutorial - Station Locations:*
-[A1 Bitbucket Station Locations Tutorial Link](https://bitbucket.org/username/bitbucketstationlocations/ "Bitbucket Station Locations")
