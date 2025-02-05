@@ -17,45 +17,45 @@ Six Parts:
 # A2 Database Requirements:
   Use 1:M relationship: company is parent table
   1. company attributes:
-      * cmp_id (pk)
-      * cmp_type enum('C-Corp','S-Corp','Non-Profit-Corp','LLC','Partnership')
-      * cmp_street
-      * cmp_city
-      * cmp_state
-      * cmp_zip
-      * cmp_phone
-      * cmp_ytd_sales
-      * cmp_url
-      * cmp_notes
+      - cmp_id (pk)
+      - cmp_type enum('C-Corp','S-Corp','Non-Profit-Corp','LLC','Partnership')
+      - cmp_street
+      - cmp_city
+      - cmp_state
+      - cmp_zip
+      - cmp_phone
+      - cmp_ytd_sales
+      - cmp_url
+      - cmp_notes
   2. customer attributes:
-      * cus_id (pk)
-      * cmp_id (fk)
-      * cus_ssn (binary 64)
-      * cus_salt (binary 64)
-      * cus_type enum('Loyal','Discount','Impulse','Need-Based','Wandering')
-      * cus_first
-      * cus_last
-      * cus_street
-      * cus_city
-      * cus_state
-      * cus_zip
-      * cus_phone
-      * cus_email
-      * cus_balance
-      * cus_tot_sales
-      * cus_notes
+      - cus_id (pk)
+      - cmp_id (fk)
+      - cus_ssn (binary 64)
+      - cus_salt (binary 64)
+      - cus_type enum('Loyal','Discount','Impulse','Need-Based','Wandering')
+      - cus_first
+      - cus_last
+      - cus_street  
+      - cus_city
+      - cus_state
+      - cus_zip
+      - cus_phone
+      - cus_email
+      - cus_balance
+      - cus_tot_sales
+      - cus_notes
   3. Create suitable indexes and foreign keys:
-      * Enforce pk/fk relationship: on update cascade, on delete restrict
+      - Enforce pk/fk relationship: on update cascade, on delete restrict
 
 
 # User1 and User2 required SQL commands:
 
-    * Local Admin: (***NOTE***: you do *not* have permissions to create users on the CCI Server)
-    * Create two different users (user1 and user2), with two different passwords: both users can access from localhost only.
-    * See Granting_Privileges.pdf
+* Local Admin: (***NOTE***: you do *not* have permissions to create users on the CCI Server)
+* Create two different users (user1 and user2), with two different passwords: both users can access from localhost only.
+* See Granting_Privileges.pdf
 
-    1. Limit user1 to select, update, and delete privileges on company and customer tables
-    2. Limit user2 to select, and insert privileges on customer table
+1. Limit user1 to select, update, and delete privileges on company and customer tables
+2. Limit user2 to select, and insert privileges on customer table
 
     Log into local server as required:
     * Verify database/table permissions, show grants:
