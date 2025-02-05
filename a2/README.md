@@ -55,7 +55,7 @@
 
 ---
 
-### Assignment Screenshots
+### Assignment Screenshots!
 
 #### SQL Code Examples
 ![A2 SQL Code Part 1](img/sql1.png)
