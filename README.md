@@ -7,15 +7,17 @@
 *Course Work Links:*
 
 1. [A1 README.md](a1/README.md "My A1 README.md file")
-    - Screenshot of ampps installation running;
+    - Screenshot of ampps installation running
     - Screenshot of A1 ERD
     - Screenshot of at least one SQL Solution
     - Forward-engineered and linked .sql file lis3781_a1_solutions.sql
     - Git commands w/short descriptions
 
 2. [A2 README.md](a2/README.md "My A2 README.md file")
-    - Install something
-    - Install something
+    - Screenshot of SQL code
+    - Screenshot of Customer table
+    - Screenshot of Company table
+    - Screenshot of lis3781_a2_solutions.sql file
     
 3. [A3 README.md](a3/README.md "My A3 README.md file")
     - Install something
