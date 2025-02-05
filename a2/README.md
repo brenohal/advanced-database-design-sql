@@ -1,4 +1,4 @@
-# LIS4368 Advanced Database Management  
+# LIS3781 Advanced Database Management  
 
 ## Brennan O'Halloran  
 
