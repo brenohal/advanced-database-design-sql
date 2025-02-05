@@ -6,7 +6,7 @@
 
 ---  
 
-Five Parts:
+**Five Parts:**
 
 1. Create SQL tables and insert data.
 2. Grant privileges to users.
@@ -64,9 +64,9 @@ Five Parts:
 - See **Granting_Privileges.pdf** for reference.  
 
 #### **Permission Requirements:**  
-1. **User1 permissions:**  
+1. User1 permissions: 
    - `SELECT`, `UPDATE`, and `DELETE` privileges on `company` and `customer` tables.  
-2. **User2 permissions:**  
+2. User2 permissions: 
    - `SELECT` and `INSERT` privileges on the `customer` table only.  
 
 #### **Verification Steps:**  
@@ -85,12 +85,12 @@ Five Parts:
     - `Customer` (as `user1`)  
 
 #### **Testing Requirements:**  
-- **As User1:**  
+- As User1: 
   - Document failed `INSERT` attempts on `company` and `customer` tables.  
-- **As User2:**  
+- As User2: 
   - Document failed attempts to view the `company` table.  
   - Document failed `DELETE` attempts on the `customer` table.  
-- **As Admin:**  
+- As Admin: 
   - Show commands for removing both tables.  
 
 ---
