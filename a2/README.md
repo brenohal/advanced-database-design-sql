@@ -84,15 +84,6 @@
     - `Company` (as `user2`)  
     - `Customer` (as `user1`)  
 
-#### **Testing Requirements:**  
-- As User1: 
-  - Document failed `INSERT` attempts on `company` and `customer` tables.  
-- As User2: 
-  - Document failed attempts to view the `company` table.  
-  - Document failed `DELETE` attempts on the `customer` table.  
-- As Admin: 
-  - Show commands for removing both tables.  
-
 ---
 
 ### README.md Requirements  
