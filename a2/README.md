@@ -108,7 +108,7 @@
 ##### **Company Table:**  
 ![A2 Company Table](img/company.png)  
 
-##### **Created UsersL**  
+##### **Created Users:**  
 ![Users](img/user.png)  
 
 #### **Solution File**  
