@@ -15,8 +15,7 @@
 
 2. [A2 README.md](a2/README.md "My A2 README.md file")
     - Screenshot of SQL code
-    - Screenshot of Customer table
-    - Screenshot of Company table
+    - Screenshot of Customer table and Company table
     - Screenshot of lis3781_a2_solutions.sql file
     
 3. [A3 README.md](a3/README.md "My A3 README.md file")
