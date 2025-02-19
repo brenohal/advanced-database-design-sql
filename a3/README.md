@@ -40,6 +40,10 @@
 ##### **Commodity Table:**  
 ![A3 Company Table](img/commodity.png)  
 
+
+##### **Order Table:**  
+![A3 Order Table](img/order.png)  
+
 ##### **Required Report Question #1:**  
 ![Report](img/report.png)  
 
