@@ -8,11 +8,10 @@
 
 **Five Parts:**
 
-1. Create SQL tables and insert data.
-2. Grant privileges to users.
-3. Test user permissions.
+1. Donwload and install Oracle XE.
+2. Install SQL developer extension in VsCode.
+3. Run SQL code to create tables and populate them.
 4. Attach required screenshots.
-5. Bitbucket repo links
 
 ---
 

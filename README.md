@@ -19,8 +19,10 @@
     - Screenshot of lis3781_a2_solutions.sql file
         
 3. [A3 README.md](a3/README.md "My A3 README.md file")
-    - Install something
-    - Install something
+    - Screenshot of SQL code
+    - Screenshot of populated tables
+    - Screenshot of required report
+    - Link to lis3781_a3_solutions.sql file
 
 4. [A4 README.md](a4/README.md "My A4 README.md file")
     - Install something
