@@ -6,7 +6,7 @@
 
 ---  
 
-**Five Parts:**
+**Four Parts:**
 
 1. Donwload and install Oracle XE.
 2. Install SQL developer extension in VsCode.
