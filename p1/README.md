@@ -1,15 +1,47 @@
-> **NOTE:** This README.md file should be placed at the **root of each of your main directory.**
+# LIS3781 Advanced Database Management  
 
-# Class number and name
+## Brennan O'Halloran  
 
-## Your name
+### Project #1 Requirements  
 
-### Class Number Requirements:
+---  
 
-*Course Work Links:*
+**Four Parts:**
 
-1. [A1 README.md](a1/README.md "My A1 README.md file")
-    - Install something
-    - Install something
+1. Create Project 1 ERD.
+2. Create Project 1 SQL code.
+3. Populate tables with data.
+4. Attach required screenshots.
+5. Attach required SQL code.
 
-2. [A2 README.md](a2/README.md "My A2 README.md file")
+---
+
+### README.md Requirements  
+
+✔️ **Screenshot of your ERD**  
+✔️ **Screenshot of number of tables (11)**  
+✔️ **Screenshot of populated tables (11)**  
+✔️ **Screenshot: At least *one* required report (i.e., exercise below), and SQL code solution** 
+✔️ **Link to lis3781_p1_solutions.sql file with tables and data**  
+
+---
+
+### Assignment Screenshots!  
+
+---
+
+#### **Populated Tables**   
+![Populated Tables](img/data.png)  
+
+##### **Number of Tables**  
+![Number of Tables](img/tables.png)  
+
+
+##### **P1 ERD**  
+![P1 ERD](img/ERD.png)  
+
+##### **Required Report Question #1:**  
+![Report](img/report.png)  
+
+#### **Solution File**  
+📄 [**View lis3781_a2_solutions.sql**](lis3781_p1_solutions.sql)  
