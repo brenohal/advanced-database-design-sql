@@ -1,4 +1,4 @@
-# LIS3781 Advances Data Management
+# LIS3781 Advanced Database Management
 
 ## Brennan O'Halloran
 
@@ -33,8 +33,10 @@
     - Install something
     
 6.  [P1 README.md](p1/README.md "My P1 README.md file")
-    - Install something
-    - Install something
+    - Provide Screenshot of ERD
+    - Provide Screenshot of number of tables and populated tables
+    - Provide Screenshot of at least one required report
+    - Provide link to lis3781_p1_solutions.sql file
     
 7. [P2 README.md](p2/README.md "My P2 README.md file")
     - Install something
