@@ -44,4 +44,4 @@
 ![Report](img/report.png)  
 
 #### **Solution File**  
-📄 [**View lis3781_a2_solutions.sql**](lis3781_p1_solutions.sql)  
+📄 [**View lis3781_P1_solutions.sql**](lis3781_p1_solutions.sql)  
