@@ -25,8 +25,9 @@
     - Link to lis3781_a3_solutions.sql file
 
 4. [A4 README.md](a4/README.md "My A4 README.md file")
-    - Install something
-    - Install something
+    - Screenshot of ERD
+    - Screenshot of required report
+    - Link to lis3781_a3_solutions.sql file
     
 5. [A5 README.md](a5/README.md "My A5 README.md file")
     - Install something
