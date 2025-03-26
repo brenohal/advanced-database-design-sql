@@ -6,7 +6,7 @@
 
 ---  
 
-**Four Parts:**
+**Five Parts:**
 
 1. Create Assignment 4 ERD.
 2. Create Assignment 4 SQL code.
@@ -36,4 +36,4 @@
 
 
 #### **Solution File**  
-📄 [**View lis3781_P1_solutions.sql**](lis3781_a4_solutions.sql)  
+📄 [**View lis3781_A4_solutions.sql**](lis3781_a4_solutions.sql)  
