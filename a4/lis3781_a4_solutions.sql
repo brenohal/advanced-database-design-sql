@@ -410,40 +410,7 @@ GO
 
 
 
------------------------------------------------------------------------------
--- 16) CREATE PROCEDURE: dbo.CreatePersonSSN
---      (Ensure it is the first statement in the batch)
------------------------------------------------------------------------------
-GO
-CREATE PROC dbo.CreatePersonSSN
-AS
-BEGIN
-    DECLARE @salt    BINARY(64),
-            @ran_num INT,
-            @ssn     BINARY(64),
-            @x       INT,
-            @y       INT;
 
-    SET @x = 1;
-    SET @y = (SELECT COUNT(*) FROM dbo.person);
-
-    WHILE (@x <= @y)
-    BEGIN
-        SET @salt    = CRYPT_GEN_RANDOM(64);
-        SET @ran_num = FLOOR(RAND()*(999999999 - 111111111 + 1)) + 111111111;
-        SET @ssn     = HASHBYTES('SHA2_512', CONCAT(@salt, @ran_num));
-
-        UPDATE dbo.person
-          SET per_pep = @salt,
-              per_ssn = @ssn
-          WHERE per_id = @x;
-
-        SET @x = @x + 1;
-    END;
-END;
-GO
-
-exec dbo.CreatePersonSSN
 -----------------------------------------------------------------------------
 -- 17) INSERT SAMPLE DATA
 -----------------------------------------------------------------------------
@@ -619,6 +586,45 @@ VALUES
 
 
 
+	-----------------------------------------------------------------------------
+-- 16) CREATE PROCEDURE: dbo.CreatePersonSSN
+--      (Ensure it is the first statement in the batch)
+-----------------------------------------------------------------------------
+GO
+CREATE PROC dbo.CreatePersonSSN
+AS
+BEGIN
+    DECLARE @salt    BINARY(64),
+            @ran_num INT,
+            @ssn     BINARY(64),
+            @x       INT,
+            @y       INT;
+
+    SET @x = 1;
+    SET @y = (SELECT COUNT(*) FROM dbo.person);
+
+    WHILE (@x <= @y)
+    BEGIN
+        SET @salt    = CRYPT_GEN_RANDOM(64);
+        SET @ran_num = FLOOR(RAND()*(999999999 - 111111111 + 1)) + 111111111;
+        SET @ssn     = HASHBYTES('SHA2_512', CONCAT(@salt, @ran_num));
+
+        UPDATE dbo.person
+          SET per_pep = @salt,
+              per_ssn = @ssn
+          WHERE per_id = @x;
+
+        SET @x = @x + 1;
+    END;
+END;
+GO
+
+
+
+exec dbo.CreatePersonSSN
+
+
+
 SELECT * FROM dbo.person;
 SELECT * FROM dbo.store;
 SELECT * FROM dbo.vendor;
@@ -634,27 +640,25 @@ SELECT * FROM dbo.order_line;
 SELECT * FROM dbo.invoice;
 SELECT * FROM dbo.payment;
 
-/*
-Create a view that displays the sum of all paid invoice totals for each customer, sort by the largest
-invoice total sum appearing first
 
-CREATE VIEW dbo.vwPaidInvoiceTotalsByCustomer
-AS
-SELECT TOP 100 PERCENT
-    p.per_id,
-    p.per_fname AS FirstName,
-    p.per_lname AS LastName,
-    SUM(i.inv_total) AS TotalPaid
-FROM dbo.invoice AS i
-    INNER JOIN dbo.[order]      AS o   ON i.ord_id  = o.ord_id
-    INNER JOIN dbo.contact      AS c   ON o.cnt_id  = c.cnt_id
-    INNER JOIN dbo.person       AS p   ON c.per_cid = p.per_id
-WHERE i.inv_paid = 1
-GROUP BY
-    p.per_id,
-    p.per_fname,
-    p.per_lname
-ORDER BY SUM(i.inv_total) DESC;  -- 'Hacky' approach
-GO
-*/
 
+
+--if object_id (N'dbo.v_paid_invoice_total', N'V') is not null
+--drop view dbo.v_paid_invoice_total;
+--go
+
+--create view dbo.v_paid_invoice_total as
+--	select p.per_id, per_fname, per_lname, sum(inv_total) as sum_total, format(sum(inv_total), 'C', 'en-us') as paid_invoice_total
+--	from dbo.person p
+--		join dbo.customer c on p.per_id=c.per_id
+--		join dbo.contact ct on c.per_id=ct.per_cid
+--		join dbo.[order] o on ct.cnt_id=o.cnt_id
+--		join dbo.invoice i on o.ord_id=i.ord_id
+--	where inv_paid !=0
+--	group by p.per_id, per_fname, per_lname
+--go
+
+--select per_id, per_fname, per_lname, paid_invoice_total
+--from dbo.v_paid_invoice_total
+--order by sum_total desc;
+--go
