@@ -32,7 +32,7 @@
 ![ERD](img/A5_erd.png)  
 
 ##### **Required Report**  
-![Number of Tables](img/Report.png)  
+![Report](img/report.png)  
 
 
 #### **Solution File**  
