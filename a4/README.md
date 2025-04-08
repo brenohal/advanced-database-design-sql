@@ -20,7 +20,7 @@
 
 ✔️ **Screenshot of your ERD**  
 ✔️ **Screenshot of one required report**   
-✔️ **Link to lis3781_p1_solutions.sql file with tables and data**  
+✔️ **Link to lis3781_a4_solutions.sql file with tables and data**  
 
 ---
 

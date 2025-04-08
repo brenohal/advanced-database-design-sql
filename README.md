@@ -27,11 +27,12 @@
 4. [A4 README.md](a4/README.md "My A4 README.md file")
     - Screenshot of ERD
     - Screenshot of required report
-    - Link to lis3781_a3_solutions.sql file
+    - Link to lis3781_a4_solutions.sql file
     
 5. [A5 README.md](a5/README.md "My A5 README.md file")
-    - Install something
-    - Install something
+    - Screenshot of ERD
+    - Screenshot of required report
+    - Link to lis3781_a5_solutions.sql file
     
 6.  [P1 README.md](p1/README.md "My P1 README.md file")
     - Provide Screenshot of ERD
