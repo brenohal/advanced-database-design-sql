@@ -1,47 +1,66 @@
-# LIS3781 Advanced Database Management
+# Database Design & SQL
 
-## Brennan O'Halloran
+**Course:** LIS 3781 — Database Concepts | Florida State University  
+**Author:** Brennan O'Halloran  
+**Language:** SQL (MySQL)  
+**Tools:** MySQL Workbench, AMPPS, Bitbucket, Git
 
-### LIS3781 Requirements:
+---
 
-*Course Work Links:*
+## Overview
 
-1. [A1 README.md](a1/README.md "My A1 README.md file")
-    - Screenshot of ampps installation running
-    - Screenshot of A1 ERD
-    - Screenshot of at least one SQL Solution
-    - Forward-engineered and linked .sql file lis3781_a1_solutions.sql
-    - Git commands w/short descriptions
+This repository contains coursework from LIS 3781: Database Concepts at Florida State University. The projects cover the full database development lifecycle — from requirements gathering and entity-relationship modeling through physical schema design, forward engineering, and SQL querying.
 
-2. [A2 README.md](a2/README.md "My A2 README.md file")
-    - Screenshot of SQL code
-    - Screenshot of Customer table and Company table
-    - Screenshot of lis3781_a2_solutions.sql file
-        
-3. [A3 README.md](a3/README.md "My A3 README.md file")
-    - Screenshot of SQL code
-    - Screenshot of populated tables
-    - Screenshot of required report
-    - Link to lis3781_a3_solutions.sql file
+---
 
-4. [A4 README.md](a4/README.md "My A4 README.md file")
-    - Screenshot of ERD
-    - Screenshot of required report
-    - Link to lis3781_a4_solutions.sql file
-    
-5. [A5 README.md](a5/README.md "My A5 README.md file")
-    - Screenshot of ERD
-    - Screenshot of required report
-    - Link to lis3781_a5_solutions.sql file
-    
-6.  [P1 README.md](p1/README.md "My P1 README.md file")
-    - Provide Screenshot of ERD
-    - Provide Screenshot of number of tables and populated tables
-    - Provide Screenshot of at least one required report
-    - Provide link to lis3781_p1_solutions.sql file
-    
-7. [P2 README.md](p2/README.md "My P2 README.md file")
-    - Install something
-    - Install something
-    - Install something
-    - test
+## Topics Covered
+
+- Entity-Relationship Diagram (ERD) design and normalization
+- Forward engineering ERDs to physical SQL schemas
+- MySQL database creation, population, and querying
+- Multi-table joins, subqueries, and aggregate functions
+- Business rules translation into relational constraints
+- Version control with Git and Bitbucket
+
+---
+
+## Project Highlights
+
+### HR Database (Assignment 1)
+Designed a relational database for an HR department to track employee records, job histories, benefits, and dependents. Key design decisions included:
+- Many-to-many relationship between employees and benefits via a Plan junction table
+- Full employee history tracking (job changes, salary changes, benefit elections)
+- Zero-filled SSN and zip code formatting constraints
+- All tables include audit/notes attributes per business requirements
+
+### Additional Assignments (a2–a5, p1)
+Subsequent assignments build on the HR schema with increasingly complex SQL:
+- Multi-table SELECT queries with JOINs and WHERE clauses
+- Aggregate queries using GROUP BY, HAVING, and window functions
+- Stored procedures and data manipulation scripts
+- Final project (p1) integrating all course concepts
+
+---
+
+## Repository Structure
+
+```
+/
+├── a1/     # ERD design, forward-engineered SQL schema, business rules
+├── a2/     # SQL querying — JOINs, filtering, aggregation
+├── a3/     # Advanced queries — subqueries, GROUP BY, HAVING
+├── a4/     # Data manipulation — INSERT, UPDATE, DELETE
+├── a5/     # Stored procedures and advanced SQL
+└── p1/     # Final project
+```
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| MySQL | Relational database engine |
+| MySQL Workbench | ERD design and schema forward engineering |
+| AMPPS | Local server stack (Apache, MySQL, PHP) |
+| Git / Bitbucket | Version control |
