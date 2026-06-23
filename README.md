@@ -1,6 +1,6 @@
 # Database Design & SQL
 
-**Course:** LIS 3781 — Database Concepts | Florida State University  
+**Course:** LIS 3781 — Advanced Database Management| Florida State University  
 **Author:** Brennan O'Halloran  
 **Language:** SQL (MySQL)  
 **Tools:** MySQL Workbench, AMPPS, Bitbucket, Git
