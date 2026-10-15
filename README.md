@@ -1,66 +1,42 @@
+<!-- Local review draft. Nothing here has been published to GitHub. -->
+
 # Database Design & SQL
 
-**Course:** LIS 3781 — Advanced Database Management| Florida State University  
-**Author:** Brennan O'Halloran  
-**Language:** SQL (MySQL)  
-**Tools:** MySQL Workbench, AMPPS, Git
+**LIS 3781 · Advanced Database Management · Florida State University**
 
----
+From entity relationship modeling to populated schemas and SQL reporting, this repository collects my database design coursework. The work focuses on translating business requirements into normalized relational structures and queries that answer practical questions.
 
-## Overview
+**[Portfolio](https://brenohal.github.io/brennan-resume/) · [GitHub profile](https://github.com/brenohal) · [LinkedIn](https://www.linkedin.com/in/brennan-o-halloran)**
 
-This repository contains coursework from LIS 3781: Database Concepts at Florida State University. The projects cover the full database development lifecycle — from requirements gathering and entity-relationship modeling through physical schema design, forward engineering, and SQL querying.
+## Project highlights
 
----
+- Designed an HR database for employees, job history, benefits, and dependents.
+- Modeled employee-to-benefit relationships with a junction table and preserved historical records.
+- Built a final project schema with 11 related tables, populated data, and reporting queries.
+- Practiced normalization, joins, subqueries, aggregation, data changes, and stored procedures.
 
-## Topics Covered
+## Database visuals
 
-- Entity-Relationship Diagram (ERD) design and normalization
-- Forward engineering ERDs to physical SQL schemas
-- MySQL database creation, population, and querying
-- Multi-table joins, subqueries, and aggregate functions
-- Business rules translation into relational constraints
-- Version control with Git and Bitbucket
+| HR database · ERD | Final project · ERD |
+|:---:|:---:|
+| [![HR database entity relationship diagram](https://raw.githubusercontent.com/brenohal/advanced-database-design-sql/master/a1/img/ERD.png)](https://github.com/brenohal/advanced-database-design-sql/blob/master/a1/img/ERD.png) | [![Final project entity relationship diagram](https://raw.githubusercontent.com/brenohal/advanced-database-design-sql/master/p1/img/ERD.png)](https://github.com/brenohal/advanced-database-design-sql/blob/master/p1/img/ERD.png) |
 
----
+| Final project · populated tables | Example report |
+|:---:|:---:|
+| [![Final project populated tables](https://raw.githubusercontent.com/brenohal/advanced-database-design-sql/master/p1/img/tables.png)](https://github.com/brenohal/advanced-database-design-sql/blob/master/p1/img/tables.png) | [![Final project SQL report output](https://raw.githubusercontent.com/brenohal/advanced-database-design-sql/master/p1/img/report.png)](https://github.com/brenohal/advanced-database-design-sql/blob/master/p1/img/report.png) |
 
-## Project Highlights
+## Tools and concepts
 
-### HR Database (Assignment 1)
-Designed a relational database for an HR department to track employee records, job histories, benefits, and dependents. Key design decisions included:
-- Many-to-many relationship between employees and benefits via a Plan junction table
-- Full employee history tracking (job changes, salary changes, benefit elections)
-- Zero-filled SSN and zip code formatting constraints
-- All tables include audit/notes attributes per business requirements
+`MySQL` · `MySQL Workbench` · `ER modeling` · `Normalization` · `SQL queries` · `Stored procedures`
 
-### Additional Assignments (a2–a5, p1)
-Subsequent assignments build on the HR schema with increasingly complex SQL:
-- Multi-table SELECT queries with JOINs and WHERE clauses
-- Aggregate queries using GROUP BY, HAVING, and window functions
-- Stored procedures and data manipulation scripts
-- Final project (p1) integrating all course concepts
+## Explore the work
 
----
+- `a1/` — HR requirements, ERD, schema, and initial queries
+- `a2/`–`a5/` — querying, data manipulation, and stored procedure exercises
+- [`p1/`](https://github.com/brenohal/advanced-database-design-sql/tree/master/p1) — final project SQL, Workbench model, and report screenshots
 
-## Repository Structure
+`p2/` currently contains a starter README template; it is not presented here as a completed project.
 
-```
-/
-├── a1/     # ERD design, forward-engineered SQL schema, business rules
-├── a2/     # SQL querying — JOINs, filtering, aggregation
-├── a3/     # Advanced queries — subqueries, GROUP BY, HAVING
-├── a4/     # Data manipulation — INSERT, UPDATE, DELETE
-├── a5/     # Stored procedures and advanced SQL
-└── p1/     # Final project
-```
+To inspect the final project, open [`p1/P1_ERD.mwb`](https://github.com/brenohal/advanced-database-design-sql/blob/master/p1/P1_ERD.mwb) in MySQL Workbench or review [`p1/lis3781_p1_solutions.sql`](https://github.com/brenohal/advanced-database-design-sql/blob/master/p1/lis3781_p1_solutions.sql). The SQL files are coursework scripts and may assume the database objects created in earlier steps.
 
----
 
-## Tech Stack
-
-| Tool | Purpose |
-|------|---------|
-| MySQL | Relational database engine |
-| MySQL Workbench | ERD design and schema forward engineering |
-| AMPPS | Local server stack (Apache, MySQL, PHP) |
-| Git / Bitbucket | Version control |
