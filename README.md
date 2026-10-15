@@ -1,5 +1,3 @@
-<!-- Local review draft. Nothing here has been published to GitHub. -->
-
 # Database Design & SQL
 
 **LIS 3781 · Advanced Database Management · Florida State University**
